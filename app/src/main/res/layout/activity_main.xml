@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hai! I am Simple Calculator!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the input1"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the input2"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Result"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal">
+        <Button
+            android:id="@+id/add"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/mod"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_marginTop="5dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
