@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 EditText a,b;
@@ -38,6 +39,7 @@ int num1,num2;
                 num2=Integer.parseInt(b.getText().toString());
                 k=num1+num2;
                 result.setText(String.valueOf(k));
+                Toast.makeText( MainActivity.this,"Addition: "+k,Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -48,6 +50,7 @@ int num1,num2;
                 num2=Integer.parseInt(b.getText().toString());
                 k=num1-num2;
                 result.setText(String.valueOf(k));
+                Toast.makeText( MainActivity.this,"Subtraction: "+k,Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -58,6 +61,7 @@ int num1,num2;
                 num2=Integer.parseInt(b.getText().toString());
                 k=num1*num2;
                 result.setText(String.valueOf(k));
+                Toast.makeText( MainActivity.this,"Multiplication: "+k,Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -69,7 +73,7 @@ int num1,num2;
                 num2=Integer.parseInt(b.getText().toString());
                 k=num1/num2;
                 result.setText(String.valueOf(k));
-
+                Toast.makeText( MainActivity.this,"Division: "+k,Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -80,7 +84,7 @@ int num1,num2;
                 num2=Integer.parseInt(b.getText().toString());
                 k=num1%num2;
                 result.setText(String.valueOf(k));
-
+                Toast.makeText( MainActivity.this,"Mod: "+k,Toast.LENGTH_SHORT).show();
             }
         });
 
